@@ -17,7 +17,7 @@ similarity = cosine_similarity(vectors)
 def Rec(user_input):
     Index_of_anime = data[data["Name"] == user_input].index[0]
     Similarity_score = similarity[Index_of_anime]
-    Sorted_scores = sorted(list(enumerate(Similarity_score)),reverse = True,key= lambda x: x[1]) [1:6]
+    Sorted_scores = sorted(list(enumerate(Similarity_score)),reverse = True,key= lambda x: x[1]) [1:8]
     Recommended_Anime = []
     
     for i in Sorted_scores:
