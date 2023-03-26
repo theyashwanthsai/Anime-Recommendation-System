@@ -27,4 +27,5 @@ def Rec(user_input):
 st.title('Anime Recommender')
 anime_id = st.selectbox('Select an anime:', data['Name'].values)
 similar_anime = Rec(anime_id)
-st.table(similar_anime)
+if st.button('Recommend'):
+    st.table(similar_anime)
