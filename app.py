@@ -6,10 +6,10 @@ import streamlit as st
 
 
 
-# data = pd.read_csv("cleaned_data.csv")
+data = pd.read_csv("cleaned_data.csv")
 
 
-test = pd.read_csv('https://docs.google.com/spreadsheets/d/1My5nlvex49OrI2m6FEpPZ9aMRaITVqDJDoo2sMBoN0I/edit?usp=sharing', index_col=0, parse_dates=['Quradate'])
+# test = pd.read_csv('https://docs.google.com/spreadsheets/d/1My5nlvex49OrI2m6FEpPZ9aMRaITVqDJDoo2sMBoN0I/edit?usp=sharing', index_col=0, parse_dates=['Quradate'])
 
 
 cv = CountVectorizer(max_features = 13500,stop_words="english")
